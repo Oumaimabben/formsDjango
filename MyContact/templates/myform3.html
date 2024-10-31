@@ -1,0 +1,5 @@
+<form method="POST" action="{% url 'controleform3' %}">
+    {% csrf_token %}
+    {{ mycontactform3.as_p }}  <!-- Affiche le formulaire avec une mise en forme simple -->
+    <button type="submit">Submit</button>
+</form>
